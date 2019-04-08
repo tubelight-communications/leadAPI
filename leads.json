@@ -15,7 +15,7 @@
     },
     "termsOfService": "https://tubelightcommunications.com/terms"
   },
-  "host": "https://eecd2b1a.ap.ngrok.io",
+  "host": "eecd2b1a.ap.ngrok.io",
   "paths": {
     "/leads": {
       "get": {
