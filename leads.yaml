@@ -1,0 +1,436 @@
+swagger: '2.0'
+info:
+  title: Lead Service API
+  version: '1.0'
+  description: 'This API is used to handle the leads from contact us page '
+  license:
+    name: Private
+    url: 'https://tubelightcommunications.com/license'
+  contact:
+    name: Tubelight Communications
+    url: 'https://tubelightcommunications.com'
+    email: support@tubelightcommunications.com
+  termsOfService: 'https://tubelightcommunications.com/terms'
+host: localhost
+paths:
+  /leads:
+    get:
+      responses:
+        '200':
+          description: success
+          headers:
+            Expires:
+              type: string
+            Pragma:
+              type: string
+            Set-Cookie:
+              type: string
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                comment:
+                  type: string
+                companyName:
+                  type: string
+                country:
+                  type: string
+                dialCode:
+                  type: string
+                email:
+                  type: string
+                firstName:
+                  type: string
+                isDeveloper:
+                  type: string
+                lastName:
+                  type: string
+                leadID:
+                  type: string
+                number:
+                  type: string
+                numberOfMessages:
+                  type: string
+                phone:
+                  type: string
+                services:
+                  type: string
+          examples:
+            application/json; charset=utf-8:
+              - comment: '  x'
+                companyName: qwe
+                country: USA
+                dialCode: '1'
+                email: qwe@qwe.com
+                firstName: asssa
+                isDeveloper: '1'
+                lastName: aaa
+                leadID: '00002'
+                number: '1212211'
+                numberOfMessages: '3'
+                phone: '12122211'
+                services: '3'
+            text/plain; charset=utf-8: |-
+              array (
+                0 => 
+                array (
+                  'leadID' => '00002',
+                  'firstName' => 'asssa',
+                  'lastName' => 'aaa',
+                  'email' => 'qwe@qwe.com',
+                  'companyName' => 'qwe',
+                  'country' => 'USA',
+                  'dialCode' => '1',
+                  'number' => '1212211',
+                  'phone' => '12122211',
+                  'isDeveloper' => '1',
+                  'services' => '3',
+                  'numberOfMessages' => '3',
+                  'comment' => '  x',
+                ),
+                1 => 
+                array (
+                  'leadID' => '00003',
+                  'firstName' => 'asssa',
+                  'lastName' => 'sds',
+                  'email' => 'qwwq@we.co',
+                  'companyName' => 'dcjsj',
+                  'country' => 'finland',
+                  'dialCode' => '23',
+                  'number' => '57177182',
+                  'phone' => '1213323',
+                  'isDeveloper' => '0',
+                  'services' => '9',
+                  'numberOfMessages' => '5',
+                  'comment' => ' ',
+                ),
+                2 => 
+                array (
+                  'leadID' => '00032',
+                  'firstName' => 'Ramcharan',
+                  'lastName' => 'Gayak',
+                  'email' => 'rc@example.com',
+                  'companyName' => 'QTI Pvt Ltd.',
+                  'country' => '',
+                  'dialCode' => '',
+                  'number' => '9968035588',
+                  'phone' => '9968035588',
+                  'isDeveloper' => '0',
+                  'services' => NULL,
+                  'numberOfMessages' => NULL,
+                  'comment' => NULL,
+                ),
+                3 => 
+                array (
+                  'leadID' => '00033',
+                  'firstName' => 'Ramcharan',
+                  'lastName' => 'Gayak',
+                  'email' => 'rc@example.com',
+                  'companyName' => 'QTI Pvt Ltd.',
+                  'country' => '',
+                  'dialCode' => '',
+                  'number' => '9968035588',
+                  'phone' => '9968035588',
+                  'isDeveloper' => '0',
+                  'services' => NULL,
+                  'numberOfMessages' => NULL,
+                  'comment' => NULL,
+                ),
+                4 => 
+                array (
+                  'leadID' => '00034',
+                  'firstName' => 'Ramcharan',
+                  'lastName' => 'Gayak',
+                  'email' => 'rc@example.com',
+                  'companyName' => 'QTI Pvt Ltd.',
+                  'country' => '',
+                  'dialCode' => '',
+                  'number' => '9968035588',
+                  'phone' => '9968035588',
+                  'isDeveloper' => '0',
+                  'services' => NULL,
+                  'numberOfMessages' => NULL,
+                  'comment' => NULL,
+                ),
+                5 => 
+                array (
+                  'leadID' => '00035',
+                  'firstName' => 'Ramcharan',
+                  'lastName' => 'Gayak',
+                  'email' => 'rc@example.com',
+                  'companyName' => 'QTI Pvt Ltd.',
+                  'country' => '',
+                  'dialCode' => '',
+                  'number' => '9968035588',
+                  'phone' => '9968035588',
+                  'isDeveloper' => '0',
+                  'services' => NULL,
+                  'numberOfMessages' => NULL,
+                  'comment' => NULL,
+                ),
+                6 => 
+                array (
+                  'leadID' => '00036',
+                  'firstName' => 'Ramcharan',
+                  'lastName' => 'Gayak',
+                  'email' => 'rc@example.com',
+                  'companyName' => 'QTI Pvt Ltd.',
+                  'country' => '',
+                  'dialCode' => '',
+                  'number' => '9968035588',
+                  'phone' => '9968035588',
+                  'isDeveloper' => '0',
+                  'services' => NULL,
+                  'numberOfMessages' => NULL,
+                  'comment' => NULL,
+                ),
+                7 => 
+                array (
+                  'leadID' => '00037',
+                  'firstName' => 'Ramcharan',
+                  'lastName' => 'Gayak',
+                  'email' => 'rc@example.com',
+                  'companyName' => 'QTI Pvt Ltd.',
+                  'country' => '',
+                  'dialCode' => '',
+                  'number' => '9968035588',
+                  'phone' => '9968035588',
+                  'isDeveloper' => '0',
+                  'services' => NULL,
+                  'numberOfMessages' => NULL,
+                  'comment' => NULL,
+                ),
+                8 => 
+                array (
+                  'leadID' => '00038',
+                  'firstName' => 'Ramchagggggran',
+                  'lastName' => 'nalayak',
+                  'email' => 'ny@example.com',
+                  'companyName' => 'QTI Pvt Ltd.',
+                  'country' => '',
+                  'dialCode' => '',
+                  'number' => '9968035588',
+                  'phone' => '9968035588',
+                  'isDeveloper' => '0',
+                  'services' => NULL,
+                  'numberOfMessages' => NULL,
+                  'comment' => NULL,
+                ),
+                9 => 
+                array (
+                  'leadID' => '00039',
+                  'firstName' => 'tiuroejfddk',
+                  'lastName' => 'nmfdmm',
+                  'email' => 'qwe@qwkdkfkdke.com',
+                  'companyName' => 'qjddjjjswe',
+                  'country' => '',
+                  'dialCode' => '',
+                  'number' => '1212232311',
+                  'phone' => '1212232311',
+                  'isDeveloper' => '1',
+                  'services' => '3',
+                  'numberOfMessages' => '3',
+                  'comment' => NULL,
+                ),
+              )
+            text/html; charset=UTF-8:
+              - comment: '  x'
+                companyName: qwe
+                country: USA
+                dialCode: '1'
+                email: qwe@qwe.com
+                firstName: asssa
+                isDeveloper: '1'
+                lastName: aaa
+                leadID: '00002'
+                number: '1212211'
+                numberOfMessages: '3'
+                phone: '12122211'
+                services: '3'
+            application/xml; charset=utf-8: |
+              <?xml version="1.0" encoding="utf-8"?>
+              <xml><item><leadID>00002</leadID><firstName>asssa</firstName><lastName>aaa</lastName><email>qwe@qwe.com</email><companyName>qwe</companyName><country>USA</country><dialCode>1</dialCode><number>1212211</number><phone>12122211</phone><isDeveloper>1</isDeveloper><services>3</services><numberOfMessages>3</numberOfMessages><comment>  x</comment></item><item><leadID>00003</leadID><firstName>asssa</firstName><lastName>sds</lastName><email>qwwq@we.co</email><companyName>dcjsj</companyName><country>finland</country><dialCode>23</dialCode><number>57177182</number><phone>1213323</phone><isDeveloper>0</isDeveloper><services>9</services><numberOfMessages>5</numberOfMessages><comment> </comment></item><item><leadID>00032</leadID><firstName>Ramcharan</firstName><lastName>Gayak</lastName><email>rc@example.com</email><companyName>QTI Pvt Ltd.</companyName><country/><dialCode/><number>9968035588</number><phone>9968035588</phone><isDeveloper>0</isDeveloper><services/><numberOfMessages/><comment/></item><item><leadID>00033</leadID><firstName>Ramcharan</firstName><lastName>Gayak</lastName><email>rc@example.com</email><companyName>QTI Pvt Ltd.</companyName><country/><dialCode/><number>9968035588</number><phone>9968035588</phone><isDeveloper>0</isDeveloper><services/><numberOfMessages/><comment/></item><item><leadID>00034</leadID><firstName>Ramcharan</firstName><lastName>Gayak</lastName><email>rc@example.com</email><companyName>QTI Pvt Ltd.</companyName><country/><dialCode/><number>9968035588</number><phone>9968035588</phone><isDeveloper>0</isDeveloper><services/><numberOfMessages/><comment/></item><item><leadID>00035</leadID><firstName>Ramcharan</firstName><lastName>Gayak</lastName><email>rc@example.com</email><companyName>QTI Pvt Ltd.</companyName><country/><dialCode/><number>9968035588</number><phone>9968035588</phone><isDeveloper>0</isDeveloper><services/><numberOfMessages/><comment/></item><item><leadID>00036</leadID><firstName>Ramcharan</firstName><lastName>Gayak</lastName><email>rc@example.com</email><companyName>QTI Pvt Ltd.</companyName><country/><dialCode/><number>9968035588</number><phone>9968035588</phone><isDeveloper>0</isDeveloper><services/><numberOfMessages/><comment/></item><item><leadID>00037</leadID><firstName>Ramcharan</firstName><lastName>Gayak</lastName><email>rc@example.com</email><companyName>QTI Pvt Ltd.</companyName><country/><dialCode/><number>9968035588</number><phone>9968035588</phone><isDeveloper>0</isDeveloper><services/><numberOfMessages/><comment/></item><item><leadID>00038</leadID><firstName>Ramchagggggran</firstName><lastName>nalayak</lastName><email>ny@example.com</email><companyName>QTI Pvt Ltd.</companyName><country/><dialCode/><number>9968035588</number><phone>9968035588</phone><isDeveloper>0</isDeveloper><services/><numberOfMessages/><comment/></item><item><leadID>00039</leadID><firstName>tiuroejfddk</firstName><lastName>nmfdmm</lastName><email>qwe@qwkdkfkdke.com</email><companyName>qjddjjjswe</companyName><country/><dialCode/><number>1212232311</number><phone>1212232311</phone><isDeveloper>1</isDeveloper><services>3</services><numberOfMessages>3</numberOfMessages><comment/></item></xml>
+            text/html; charset=utf-8: |-
+              <table border="0" cellpadding="4" cellspacing="0">
+              <thead>
+              <tr>
+              <th>leadID</th><th>firstName</th><th>lastName</th><th>email</th><th>companyName</th><th>country</th><th>dialCode</th><th>number</th><th>phone</th><th>isDeveloper</th><th>services</th><th>numberOfMessages</th><th>comment</th></tr>
+              </thead>
+              <tbody>
+              <tr>
+              <td>00002</td><td>asssa</td><td>aaa</td><td>qwe@qwe.com</td><td>qwe</td><td>USA</td><td>1</td><td>1212211</td><td>12122211</td><td>1</td><td>3</td><td>3</td><td>  x</td></tr>
+              <tr>
+              <td>00003</td><td>asssa</td><td>sds</td><td>qwwq@we.co</td><td>dcjsj</td><td>finland</td><td>23</td><td>57177182</td><td>1213323</td><td>0</td><td>9</td><td>5</td><td> </td></tr>
+              <tr>
+              <td>00032</td><td>Ramcharan</td><td>Gayak</td><td>rc@example.com</td><td>QTI Pvt Ltd.</td><td></td><td></td><td>9968035588</td><td>9968035588</td><td>0</td><td></td><td></td><td></td></tr>
+              <tr>
+              <td>00033</td><td>Ramcharan</td><td>Gayak</td><td>rc@example.com</td><td>QTI Pvt Ltd.</td><td></td><td></td><td>9968035588</td><td>9968035588</td><td>0</td><td></td><td></td><td></td></tr>
+              <tr>
+              <td>00034</td><td>Ramcharan</td><td>Gayak</td><td>rc@example.com</td><td>QTI Pvt Ltd.</td><td></td><td></td><td>9968035588</td><td>9968035588</td><td>0</td><td></td><td></td><td></td></tr>
+              <tr>
+              <td>00035</td><td>Ramcharan</td><td>Gayak</td><td>rc@example.com</td><td>QTI Pvt Ltd.</td><td></td><td></td><td>9968035588</td><td>9968035588</td><td>0</td><td></td><td></td><td></td></tr>
+              <tr>
+              <td>00036</td><td>Ramcharan</td><td>Gayak</td><td>rc@example.com</td><td>QTI Pvt Ltd.</td><td></td><td></td><td>9968035588</td><td>9968035588</td><td>0</td><td></td><td></td><td></td></tr>
+              <tr>
+              <td>00037</td><td>Ramcharan</td><td>Gayak</td><td>rc@example.com</td><td>QTI Pvt Ltd.</td><td></td><td></td><td>9968035588</td><td>9968035588</td><td>0</td><td></td><td></td><td></td></tr>
+              <tr>
+              <td>00038</td><td>Ramchagggggran</td><td>nalayak</td><td>ny@example.com</td><td>QTI Pvt Ltd.</td><td></td><td></td><td>9968035588</td><td>9968035588</td><td>0</td><td></td><td></td><td></td></tr>
+              <tr>
+              <td>00039</td><td>tiuroejfddk</td><td>nmfdmm</td><td>qwe@qwkdkfkdke.com</td><td>qjddjjjswe</td><td></td><td></td><td>1212232311</td><td>1212232311</td><td>1</td><td>3</td><td>3</td><td></td></tr>
+              </tbody>
+              </table>
+        '400':
+          description: Bad request
+        '403':
+          description: Forbidden
+        '404':
+          description: id not found
+          headers:
+            Expires:
+              type: string
+            Pragma:
+              type: string
+            Set-Cookie:
+              type: string
+          examples:
+            application/json; charset=utf-8: ID not found
+            application/xml; charset=utf-8: |
+              <?xml version="1.0" encoding="utf-8"?>
+              <xml><item>ID not found</item></xml>
+      parameters:
+        - in: query
+          name: format
+          type: string
+          default: json
+          description: format query
+          allowEmptyValue: true
+          enum:
+            - json
+            - xml
+            - csv
+            - array
+            - html
+            - jsonp
+            - php
+            - serialized
+        - in: query
+          name: leadID
+          type: number
+          description: lead id of the lead to be found
+      summary: Fetch lead info
+      description: gets lead info from DB
+      operationId: leads_get
+    post:
+      responses:
+        '200':
+          description: ''
+          headers:
+            Expires:
+              type: string
+            Pragma:
+              type: string
+            Set-Cookie:
+              type: string
+          examples:
+            application/json; charset=utf-8: success
+        '400':
+          description: ''
+          headers:
+            Expires:
+              type: string
+            Pragma:
+              type: string
+            Set-Cookie:
+              type: string
+          examples:
+            application/json; charset=utf-8: Enter complete information to save
+        '403':
+          description: ''
+          headers:
+            Expires:
+              type: string
+            Pragma:
+              type: string
+            Set-Cookie:
+              type: string
+          examples:
+            application/json; charset=utf-8: Forbidden - Invalid Request
+        '404':
+          description: ''
+        '500':
+          description: ''
+          headers:
+            Expires:
+              type: string
+            Pragma:
+              type: string
+            Set-Cookie:
+              type: string
+          examples:
+            text/html; charset=UTF-8: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Database Error</title>\n<style type=\"text/css\">\n\n::selection { background-color: #E13300; color: white; }\n::-moz-selection { background-color: #E13300; color: white; }\n\nbody {\n\tbackground-color: #fff;\n\tmargin: 40px;\n\tfont: 13px/20px normal Helvetica, Arial, sans-serif;\n\tcolor: #4F5155;\n}\n\na {\n\tcolor: #003399;\n\tbackground-color: transparent;\n\tfont-weight: normal;\n}\n\nh1 {\n\tcolor: #444;\n\tbackground-color: transparent;\n\tborder-bottom: 1px solid #D0D0D0;\n\tfont-size: 19px;\n\tfont-weight: normal;\n\tmargin: 0 0 14px 0;\n\tpadding: 14px 15px 10px 15px;\n}\n\ncode {\n\tfont-family: Consolas, Monaco, Courier New, Courier, monospace;\n\tfont-size: 12px;\n\tbackground-color: #f9f9f9;\n\tborder: 1px solid #D0D0D0;\n\tcolor: #002166;\n\tdisplay: block;\n\tmargin: 14px 0 14px 0;\n\tpadding: 12px 10px 12px 10px;\n}\n\n#container {\n\tmargin: 10px;\n\tborder: 1px solid #D0D0D0;\n\tbox-shadow: 0 0 8px #D0D0D0;\n}\n\np {\n\tmargin: 12px 15px 12px 15px;\n}\n</style>\n</head>\n<body>\n\t<div id=\"container\">\n\t\t<h1>A Database Error Occurred</h1>\n\t\t<p>Error Number: 1048</p><p>Column 'companyName' cannot be null</p><p>INSERT INTO `leads` (`firstName`, `lastName`, `email`, `companyName`, `number`, `phone`, `isDeveloper`, `services`, `numberOfMessages`, `comment`) VALUES ('tiuroejfddk', 'nmfdmm', 'qwe@qwkdkfkdke.com', NULL, '1212232311', '1212232311', 1, '3', '3', NULL)</p><p>Filename: D:/php/api-server/system/database/DB_driver.php</p><p>Line Number: 691</p>\t</div>\n</body>\n</html>"
+      parameters:
+        - in: body
+          name: body
+          schema:
+            type: object
+            properties:
+              comment:
+                type: string
+              companyName:
+                type: string
+              country:
+                type: string
+              dialCode:
+                type: string
+              email:
+                type: string
+              firstName:
+                type: string
+              isDeveloper:
+                type: string
+              lastName:
+                type: string
+              number:
+                type: string
+              numberOfMessages:
+                type: string
+              phone:
+                type: string
+              services:
+                type: string
+              leadID:
+                type: string
+          x-examples:
+            application/json:
+              comment: magggaphaagagx
+              companyName: qjddjjjswe
+              country: USA
+              dialCode: '1'
+              email: qwe@qwkdkfkdke.com
+              firstName: tiuroejfddk
+              isDeveloper: '1'
+              lastName: nmfdmm
+              number: '1212232311'
+              numberOfMessages: '3'
+              phone: '12122223211'
+              services: '3'
+          description: lead model based on db
+      summary: collect lead data
+      description: this api collects lead data
+      operationId: leads_post
+consumes:
+  - application/json
+produces:
+  - application/json; charset=utf-8
+  - application/xml; charset=utf-8
+  - text/html; charset=utf-8
+  - application/csv; charset=utf-8
+  - text/html; charset=UTF-8
+  - text/plain; charset=utf-8
+  - application/vnd.php.serialized; charset=utf-8
+basePath: /api/internal
+definitions: {}
+schemes:
+  - http
+  - https
